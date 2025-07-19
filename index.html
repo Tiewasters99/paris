@@ -16,7 +16,7 @@
             line-height: 1.7;
             color: #2c2c2c;
             background-color: #fefefe;
-            padding: 2.5rem 1rem;
+            padding: 1.5rem 1rem;
         }
 
         .container {
@@ -99,6 +99,18 @@
 
         .emphasis {
             font-style: italic;
+        }
+
+        @media print {
+            body {
+                padding: 3rem 1rem;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 2rem;
+            }
         }
 
         @media (max-width: 768px) {
